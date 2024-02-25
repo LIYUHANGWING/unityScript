@@ -25,7 +25,7 @@ public class PlayerProperty : MonoBehaviour
 
         EventCenter.OnEnemyDied += OnEnemyDied;
     }
-
+    //使用消耗品方法
     public void UseDrug(ItemSO itemSO)
     {
         foreach(Property p in itemSO.propertyList)
@@ -53,6 +53,7 @@ public class PlayerProperty : MonoBehaviour
         propertyDict.TryGetValue(pt, out list);
         list.Add(new Property(pt,value));
     }
+    //使用后扣去消耗品
     public void RemoveProperty(PropertyType pt, int value)
     {
         switch (pt)
@@ -73,6 +74,8 @@ public class PlayerProperty : MonoBehaviour
 
         list.Remove(list.Find(x => x.value == value));
     }
+
+    //消灭敌人后添加经验
     private void OnDestroy()
     {
         EventCenter.OnEnemyDied -= OnEnemyDied;

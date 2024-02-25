@@ -24,6 +24,8 @@ public class ItemDetailUI : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
+
+   
     public void UpdateItemDetailUI(ItemSO itemSO,ItemUI itemUI)
     {
         this.itemSO = itemSO;

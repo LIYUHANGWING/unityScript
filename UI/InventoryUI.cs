@@ -30,6 +30,8 @@ public class InventoryUI : MonoBehaviour
         Hide();
     }
 
+
+    //展示背包、关闭背包
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.B))
@@ -56,6 +58,9 @@ public class InventoryUI : MonoBehaviour
     {
         uiGameObject.SetActive(false);
     }
+
+
+
     public void AddItem(ItemSO itemSO)
     {
         GameObject itemGo = GameObject.Instantiate(itemPrefab);
