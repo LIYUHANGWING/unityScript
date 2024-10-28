@@ -37,7 +37,9 @@ public class GameTaskSO:ScriptableObject
         if(currentEnemyCount>= enemyCountNeed)
         {
             state = GameTaskState.Completed;
-            MessageUI.Instance.Show("ÈÎÎñÍê³É£¬ÇëÇ°È¥ÁìÉÍ£¡");
+            MessageUI.Instance.Show("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½Ç°È¥ï¿½ï¿½ï¿½Í£ï¿½");
+
+            //
         }
     }
 
